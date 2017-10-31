@@ -1,0 +1,32 @@
+valgrind --leak-check=full --track-origins=yes ./spell_checker.o
+==17371== Memcheck, a memory error detector
+==17371== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==17371== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==17371== Command: ./spell_checker.o
+==17371== 
+Binary dictionary file not found.
+Please enter the ASCII formatted dictionary file: dictionary.txt
+Dictionary has been loaded into the memory.
+Enter -1 to exit the program.
+Enter a word: acomplishement
+Word "acomplishement" is incorrect.
+The most similar word found is: "accomplishment"
+Edit Distance: 2
+Transformation steps: a c(i) c o m p l i s h (d) m e n t 
+
+Enter a word: thiswordisnotvalid
+Word "thiswordisnotvalid" does not exist.
+
+Enter a word: correct
+Word "correct" is correct.
+
+Enter a word: -1
+==17371== 
+==17371== HEAP SUMMARY:
+==17371==     in use at exit: 0 bytes in 0 blocks
+==17371==   total heap usage: 2,307,367 allocs, 2,307,367 frees, 85,360,448 bytes allocated
+==17371== 
+==17371== All heap blocks were freed -- no leaks are possible
+==17371== 
+==17371== For counts of detected and suppressed errors, rerun with: -v
+==17371== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
