@@ -7,4 +7,4 @@ See valgrind.report file for usage demonstration.
 
 Basic workflow of the program:
 
-![alt text](https://github.com/canberkakcali/hashtable-spell-checker/blob/master/WorkFlow.png?raw=true)
+![alt text](https://github.com/canberkakcali/hashtable-spell-checker/blob/master/BasicWorkFlow.png?raw=true)
