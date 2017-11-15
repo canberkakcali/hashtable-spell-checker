@@ -5,7 +5,7 @@ valgrind --leak-check=full --track-origins=yes ./spell_checker.o
 ==17371== Command: ./spell_checker.o
 ==17371== 
 Binary dictionary file not found.
-Please enter the ASCII formatted dictionary file: dictionary.txt
+Please enter the ASCII formatted dictionary file: cmudict-0.7b
 Dictionary has been loaded into the memory.
 Enter -1 to exit the program.
 Enter a word: acomplishement
